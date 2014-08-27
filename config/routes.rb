@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  
+  get 'amenities' => 'units#amenities'
+  get 'location' => 'units#location'
+  get 'units' => 'units#units'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
