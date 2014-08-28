@@ -7,8 +7,35 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="page-header">
+                <h1 style="float: left;">
+                    <img src="/assets/logo.png" alt="">
+                </h1>
 
+            </div>
+            <div class="jumbotron">
+                <h1 style="font-size: 3em;">
+                    555-676-4411
+                </h1>
+
+            </div>
+        </div>
+    </div>
 <%= yield %>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="jumbotron">
+            <a href="/units">Units</a>
+            <a href="/amenities">Amenities</a>
+            <a href="/location">Location</a>
 
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
